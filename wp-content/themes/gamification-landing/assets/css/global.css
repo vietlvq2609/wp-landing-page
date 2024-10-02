@@ -1,0 +1,65 @@
+/* global.css */
+:root {
+  --primary-color: #2c2a69;
+  --secondary-color: #de5c47;
+  --white-color: #f3f3f3;
+}
+
+html {
+  font-size: 16px; /* This makes 1rem = 16px */
+}
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+.header {
+  background-color: var(--primary-color);
+  padding: 0.5rem 0.8rem;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  max-width: 40%;
+}
+
+.header__logo img {
+  height: auto;
+  max-width: 100%;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.header__button {
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+/* Outlined button */
+.header__button--outlined {
+  background: transparent;
+  color: var(--white-color);
+  border: 1px solid white;
+}
+
+/* Filled button */
+.header__button--filled {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
